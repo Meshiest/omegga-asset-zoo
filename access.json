@@ -1,0 +1,1 @@
+["fs", "path", "zlib", "node:sqlite"]

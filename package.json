@@ -1,0 +1,13 @@
+{
+  "name": "omegga-asset-zoo",
+  "private": true,
+  "description": "brickadia-zoo's inventory pipeline as an omegga plugin",
+  "license": "CC0-1.0",
+  "scripts": {
+    "typecheck": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.3"
+  }
+}

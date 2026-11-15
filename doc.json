@@ -1,0 +1,32 @@
+{
+  "name": "zoo",
+  "description": "brickadia-zoo on a headless server: inventory and catalog dumps, the zoo world, and the host pipeline",
+  "author": "cake",
+  "config": {
+    "brdb-dir": {
+      "description": "brdb checkout, only read: seeds out/tables and gives the property map its schemas",
+      "default": "",
+      "type": "string"
+    },
+    "brs-js-dir": {
+      "description": "brs-js checkout, only read: seeds out/tables",
+      "default": "",
+      "type": "string"
+    }
+  },
+  "commands": [],
+  "consoleCommands": [
+    {
+      "name": "zoo",
+      "description": "brickadia-zoo: dumps and the zoo world (bin/run-pipeline.js runs it all unattended)",
+      "example": "/zoo world",
+      "args": [
+        {
+          "name": "action",
+          "description": "ping | run | dump | build [phase] | save <name> | props | world | compare <out dir> [all]",
+          "required": true
+        }
+      ]
+    }
+  ]
+}
